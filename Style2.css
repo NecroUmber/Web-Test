@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(57, 192, 179) ;
+}
+
+@keyframes Rotate {
+    from{
+        transform: scale(0.1,0.1);
+        transform: rotate(360);
+    }
+
+    to{
+        transform: scale(1,1);
+        transform: rotate(360deg);
+    }
+}
+
+#dog{
+    width: 300PX;
+    height: 300PX;
+    padding-top: 300px;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    align-self: start;
+
+    animation-name: Rotate;
+    animation-duration: 1.5s;
+    animation-timing-function:linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+h1{
+    position: absolute;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 50px;
+    font-size: 40px;
+
+    animation-name: Rotate;
+    animation-duration: 1.5s;
+    animation-timing-function:linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    
+}
+#dog:hover{
+    transform: scale(1.1);
+}
+
+
